@@ -16,15 +16,6 @@
     <a href="/LICENSE">
         <img alt="Github license" src="https://img.shields.io/github/license/semaphore-protocol/discord-bot.svg?style=flat-square">
     </a>
-    <a href="https://github.com/semaphore-protocol/discord-bot/actions?query=workflow%3Aproduction">
-        <img alt="GitHub Workflow test" src="https://img.shields.io/github/actions/workflow/status/semaphore-protocol/discord-bot/production.yml?branch=main&label=test&style=flat-square&logo=github">
-    </a>
-    <a href="https://coveralls.io/github/semaphore-protocol/discord-bot">
-        <img alt="Coveralls" src="https://img.shields.io/coveralls/github/semaphore-protocol/discord-bot?style=flat-square&logo=coveralls">
-    </a>
-    <a href="https://deepscan.io/dashboard#view=project&tid=16502&pid=22324&bid=657461">
-        <img src="https://deepscan.io/api/teams/16502/projects/22324/branches/657461/badge/grade.svg" alt="DeepScan grade">
-    </a>
     <a href="https://eslint.org/">
         <img alt="Linter eslint" src="https://img.shields.io/badge/linter-eslint-8080f2?style=flat-square&logo=eslint">
     </a>
