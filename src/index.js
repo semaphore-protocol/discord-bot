@@ -10,7 +10,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] })
 client.commands = new Collection()
 
 const commandsPath = "commands"
-const commandFiles = fs.readdirSync(commandsPath).filter((file) => file.endsWith(".js"))
+const commandFiles = fs.readdirSync(`src/${commandsPath}`).filter((file) => file.endsWith(".js"))
 
 for (const file of commandFiles) {
     const filePath = path.join(commandsPath, file)
@@ -42,6 +42,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
         await command.execute(interaction)
     } catch (error) {
         console.error(error)
+
         if (interaction.replied || interaction.deferred) {
             await interaction.followUp({ content: "There was an error while executing this command!", ephemeral: true })
         } else {
